@@ -386,6 +386,7 @@ export default function ContactSection() {
                       
                       <option value="5th">Class 5th</option>
                       <option value="6th">Class 6th</option>
+                       <option value="7th">Class 7th</option>
                       <option value="8th">Class 8th</option>
                       <option value="9th">Class 9th</option>
                       <option value="10th">Class 10th</option>

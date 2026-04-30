@@ -29,7 +29,7 @@ const ORBIT_BADGES = [
   { label: '20:1', sub: 'Ratio',    angle: 270, r: 155 },
 ];
 
-const TRUST = ['100% Result Record', 'Small Batch Sizes', 'Expert Faculty', 'AC Classrooms & CCTV Security'];
+const TRUST = ['99% Result Record', 'Small Batch Sizes', 'Expert Faculty', 'AC Classrooms & CCTV Security'];
 
 const handleScroll = (id: string) => {
   document.querySelector(id)?.scrollIntoView({ behavior: 'smooth', block: 'start' });

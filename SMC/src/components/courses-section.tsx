@@ -194,6 +194,13 @@ function CourseCard({ course, index, inView }: { course: typeof courses[0]; inde
         </p>
 
         <p
+          className="text-xs uppercase tracking-[0.18em] mb-3"
+          style={{ color: '#6b7280', fontFamily: 'var(--font-display)' }}
+        >
+          Medium: English & Gujarati
+        </p>
+
+        <p
           className="text-sm leading-relaxed mb-5"
           style={{ color: '#3a4a6b', fontFamily: 'var(--font-sans)' }}
         >
@@ -273,7 +280,7 @@ export default function CoursesSection() {
             className="max-w-2xl mx-auto text-lg leading-relaxed"
             style={{ color: '#3a4a6b', fontFamily: 'var(--font-sans)' }}
           >
-            Comprehensive coaching for Class 5th to 12th across Arts and Commerce streams.
+            Comprehensive coaching for Class 5th to 12th across Arts and Commerce streams, available in English and Gujarati medium.
           </p>
         </motion.div>
 

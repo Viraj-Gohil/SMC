@@ -14,7 +14,7 @@ export default function AboutPage() {
       <PageBanner
         title="About"
         highlight="Shree Manav Classes"
-        subtitle="A decade of academic excellence - transforming students into toppers since 2014 with quality education and personal attention."
+        subtitle="A decade of academic excellence - transforming students into toppers since 2007 with quality education and personal attention."
         breadcrumb="About Us"
       />
       <AboutSection />

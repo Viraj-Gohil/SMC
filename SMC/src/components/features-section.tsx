@@ -11,14 +11,14 @@ const features = [
   {
     icon: UserCheck,
     title: 'Experienced Faculty',
-    description: 'Our teachers have 10+ years of experience and are subject matter experts who make complex topics simple.',
+    description: 'Our teachers have 20+ years of experience and are subject matter experts who make complex topics simple.',
     color: '#1D3461',
     bg: '#EEF2FF',
   },
   {
     icon: Users,
     title: 'Small Batch Size',
-    description: 'We limit each batch to 15 students only, ensuring every student gets proper guidance and attention.',
+    description: 'We limit each batch to 20 students only, ensuring every student gets proper guidance and attention.',
     color: '#F5C518',
     bg: '#FFFDE7',
   },

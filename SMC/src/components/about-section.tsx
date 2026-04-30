@@ -253,7 +253,7 @@ export default function AboutSection() {
             <p className="text-sm font-semibold mt-1" style={{ color: '#F5C518' }}>
               {mentorCard.role}
             </p>
-            <p className="text-xs mt-3" style={{ color: '#4a5878', fontFamily: 'var(--font-sans)' }}>
+            <p className="text-sm mt-3" style={{ color: '#4a5878', fontFamily: 'var(--font-sans)' }}>
               {mentorCard.note}
             </p>
           </div>
