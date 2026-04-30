@@ -192,7 +192,7 @@ Providing quality education with personal attention, empowering students from Cl
             className="text-sm text-center sm:text-left"
             style={{ color: 'rgba(255,255,255,0.40)', fontFamily: 'var(--font-sans)' }}
           >
-            � {new Date().getFullYear()} Shree Manav Classes. All rights reserved.
+            &copy; {new Date().getFullYear()} Shree Manav Classes. All rights reserved.
           </p>
         </div>
       </div>
