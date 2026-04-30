@@ -1,5 +1,6 @@
 'use client';
 
+import type { MouseEvent } from 'react';
 import { Phone, MapPin, Mail, Facebook, Instagram, Youtube, Heart } from 'lucide-react';
 import Image from 'next/image';
 
@@ -31,7 +32,7 @@ const socialLinks = [
   { icon: Instagram, href: 'https://www.instagram.com/nagarshethketan3', label: 'Instagram', color: '#E1306C' },
 ];
 
-const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+const handleNavClick = (e: MouseEvent<HTMLAnchorElement>, href: string) => {
   if (href.startsWith('#')) {
     e.preventDefault();
     const el = document.querySelector(href);
@@ -53,9 +54,9 @@ export default function Footer() {
       />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
           {/* Brand Column */}
-          <div className="lg:col-span-1">
+          <div className="col-span-2 lg:col-span-1">
             {/* Logo */}
             <div className="flex items-center gap-3 mb-5">
               <div
@@ -63,7 +64,7 @@ export default function Footer() {
                 style={{ background: 'white', boxShadow: '0 2px 12px rgba(0,0,0,0.15)' }}
               >
                 <Image
-                  src="/footer-logo.png"
+                  src="/logo.png"
                   alt="Shree Manav Classes"
                   width={68}
                   height={68}
@@ -152,7 +153,7 @@ Providing quality education with personal attention, empowering students from Cl
           </div>
 
           {/* Contact Info */}
-          <div>
+          <div className="col-span-2 lg:col-span-1">
             <h4
               className="font-display font-bold text-white text-sm mb-5 uppercase tracking-wider"
             >

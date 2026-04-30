@@ -83,7 +83,7 @@ export default function CTABanner() {
                 const el = document.querySelector('#contact');
                 if (el) el.scrollIntoView({ behavior: 'smooth' });
               }}
-              className="flex items-center justify-center gap-2 px-10 py-4 rounded-2xl font-bold text-base transition-all duration-200"
+              className="flex items-center justify-center gap-2 px-6 py-4 rounded-2xl font-bold text-base transition-all duration-200"
               style={{
                 background: 'white',
                 color: '#c4971a',
@@ -91,7 +91,7 @@ export default function CTABanner() {
                 boxShadow: '0 4px 30px 0 rgba(0,0,0,0.25)',
               }}
             >
-              Enroll Now — Secure Your Seat <ArrowRight className="w-5 h-5" />
+              Enroll Now - Secure Your Seat <ArrowRight className="w-5 h-5" />
             </motion.button>
 
             <motion.a
