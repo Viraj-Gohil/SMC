@@ -169,22 +169,20 @@ export default function ContactSection() {
             })}
 
             {/* Google Maps Embed */}
-            <div
-              className="rounded-2xl overflow-hidden"
-              style={{ border: '1.5px solid #e8ecf8', height: 220 }}
+            <a
+              href="https://maps.app.goo.gl/ZDMT51FnVRgn5VFQ8"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center justify-center gap-3 py-4 rounded-2xl font-bold text-white text-base transition-all duration-200 hover:scale-105"
+              style={{
+                background: 'linear-gradient(135deg, #1D3461, #1e3f7a)',
+                boxShadow: '0 4px 20px 0 rgba(37,211,102,0.35)',
+                fontFamily: 'var(--font-display)',
+              }}
             >
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14758.658685314846!2d73.1648674990088!3d22.3662870598089!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395fc939f8201bb1%3A0x4a177654d7a41900!2sManav%20Classes%20Chhani%20Vadoadara!5e0!3m2!1sen!2sin!4v1777386131801!5m2!1sen!2"
-                width="100%"
-                height="220"
-                style={{ border: 0 }}
-                allowFullScreen
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-                title="Shree Manav Classes Location"
-              />
-            </div>
-
+              <MapPin className="w-5 h-5" />
+              Go Location on Google Maps
+            </a>
             {/* WhatsApp button */}
             <a
               href={`https://wa.me/919173771810?text=${encodeURIComponent('Hi, I want to know more about Shree Manav Classes courses.')}`}

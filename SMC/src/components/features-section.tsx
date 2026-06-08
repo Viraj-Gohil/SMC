@@ -3,6 +3,7 @@
 import { motion } from 'motion/react';
 import { useInView } from 'motion/react';
 import { useRef } from 'react';
+import Link from 'next/link';
 import { Users, UserCheck, Target, ClipboardCheck, ShieldCheck } from 'lucide-react';
 import { SpotlightCard } from '@/components/spotlight-card';
 import { ScrollReveal } from '@/components/scroll-reveal';
@@ -14,6 +15,7 @@ const features = [
     description: 'Our teachers have 20+ years of experience and are subject matter experts who make complex topics simple.',
     color: '#1D3461',
     bg: '#EEF2FF',
+    href: '/external-faculty',
   },
   {
     icon: Users,
@@ -95,19 +97,8 @@ export default function FeaturesSection() {
         <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-6">
           {features.map((feat, i) => {
             const Icon = feat.icon;
-            return (
-              <motion.div
-                key={i}
-                initial={{ opacity: 0, y: 40 }}
-                animate={inView ? { opacity: 1, y: 0 } : {}}
-                transition={{ duration: 0.55, delay: 0.15 + i * 0.1 }}
-                className="group relative rounded-2xl p-7 cursor-default transition-all duration-300 hover:-translate-y-2 hover:shadow-xl"
-                style={{
-                  background: 'white',
-                  border: '1.5px solid #e8ecf8',
-                  boxShadow: '0 2px 12px 0 rgba(29,52,97,0.06)',
-                }}
-              >
+            const content = (
+              <>
                 {/* Icon */}
                 <div
                   className="w-14 h-14 rounded-2xl flex items-center justify-center mb-5 transition-all duration-300 group-hover:scale-110"
@@ -128,6 +119,33 @@ export default function FeaturesSection() {
                 >
                   {feat.description}
                 </p>
+              </>
+            );
+            return (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 40 }}
+                animate={inView ? { opacity: 1, y: 0 } : {}}
+                transition={{ duration: 0.55, delay: 0.15 + i * 0.1 }}
+                className={`group relative rounded-2xl p-7 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl ${
+                  feat.href ? 'cursor-pointer' : 'cursor-default'
+                }`}
+                style={{
+                  background: 'white',
+                  border: '1.5px solid #e8ecf8',
+                  boxShadow: '0 2px 12px 0 rgba(29,52,97,0.06)',
+                }}
+              >
+                {feat.href ? (
+                  <Link
+                    href={feat.href}
+                    className="block h-full rounded-[inherit] focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[#1D3461]"
+                  >
+                    {content}
+                  </Link>
+                ) : (
+                  content
+                )}
 
                 {/* Hover accent line */}
                 <div
