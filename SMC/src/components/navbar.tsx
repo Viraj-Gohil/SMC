@@ -137,7 +137,7 @@ export default function Navbar() {
           {/* Mobile Right Side */}
           <div className="flex md:hidden items-center gap-2">
             <a
-              href="tel:+919876543210"
+              href="tel:+919173771810"
               className="flex items-center justify-center w-9 h-9 rounded-xl transition-all duration-200"
               style={{ background: 'rgba(245,197,24,0.15)', border: '1.5px solid #F5C518' }}
               aria-label="Call Now"
