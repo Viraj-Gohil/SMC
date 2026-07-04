@@ -119,7 +119,7 @@ export default function Navbar() {
           {/* Desktop CTAs */}
           <div className="hidden md:flex items-center gap-3">
             <a
-              href="tel:+919876543210"
+              href="tel:+919173771810"
               className="flex items-center gap-1.5 text-sm font-semibold px-4 py-2 rounded-lg border-2 transition-all duration-200 hover:bg-[#EEF2FF]"
               style={{ borderColor: '#1D3461', color: '#1D3461', fontFamily: 'var(--font-display)' }}
             >
