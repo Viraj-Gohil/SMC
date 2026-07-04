@@ -215,7 +215,7 @@ export default function Navbar() {
                 <div className="h-px mb-4" style={{ background: '#e8ecf8' }} />
                 <div className="flex gap-3">
                   <a
-                    href="tel:+919876543210"
+                    href="tel:+919173771810"
                     className="flex-1 flex items-center justify-center gap-2 py-3.5 rounded-xl border-2 text-sm font-bold"
                     style={{ borderColor: '#1D3461', color: '#1D3461', fontFamily: 'var(--font-display)' }}
                   >
